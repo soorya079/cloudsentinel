@@ -1,0 +1,10 @@
+{
+  "source": ["aws.ecs"],
+  "detail-type": ["ECS Task State Change"],
+  "detail": {
+    "clusterArn": [
+      "arn:aws:ecs:ap-south-1:692869638892:cluster/cloudsentinel-cluster"
+    ],
+    "lastStatus": ["STOPPED"]
+  }
+}

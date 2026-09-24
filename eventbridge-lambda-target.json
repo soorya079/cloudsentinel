@@ -1,0 +1,6 @@
+[
+  {
+    "Id": "CloudSentinelSelfHealingTarget",
+    "Arn": "arn:aws:lambda:ap-south-1:692869638892:function:CloudSentinel-SelfHealing"
+  }
+]

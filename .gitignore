@@ -30,3 +30,6 @@ Thumbs.db
 
 # Docker
 docker-compose.override.yml
+# AWS Lambda generated/test files
+self-healing-lambda.zip
+lambda-test-response.json
