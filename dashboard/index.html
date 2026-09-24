@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudSentinel | AWS DevSecOps</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            ☁️ CloudSentinel
+        </div>
+
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#monitoring">Monitoring</a>
+            <a href="#security">Security</a>
+        </div>
+
+        <div class="status-badge">
+            <span></span> System Healthy
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="overview">
+
+            <div class="hero-content">
+
+                <div class="tag">
+                    AWS DevSecOps • Self-Healing Platform
+                </div>
+
+                <h1>
+                    Cloud infrastructure that
+                    <span>heals itself.</span>
+                </h1>
+
+                <p>
+                    CloudSentinel automates container deployment,
+                    monitoring, incident detection and recovery using
+                    AWS cloud-native services.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#architecture" class="primary-btn">
+                        View Architecture
+                    </a>
+
+                    <a
+                        href="https://github.com/soorya079/cloudsentinel"
+                        target="_blank"
+                        class="secondary-btn"
+                    >
+                        View GitHub
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="card-header">
+                    <span>CloudSentinel Status</span>
+                    <span class="live">LIVE</span>
+                </div>
+
+                <div class="system-status">
+                    <div class="pulse"></div>
+
+                    <div>
+                        <strong>All Systems Operational</strong>
+                        <small>AWS ap-south-1</small>
+                    </div>
+                </div>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>1</strong>
+                        <small>ECS Task</small>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <small>Health</small>
+                    </div>
+
+                    <div>
+                        <strong>ON</strong>
+                        <small>Self-Healing</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>PLATFORM</span>
+
+                <h2>Built on AWS</h2>
+
+                <p>
+                    Production-style DevOps workflow using managed
+                    AWS services.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="icon">🚀</div>
+                    <h3>CI/CD</h3>
+                    <p>
+                        GitHub Actions automatically builds and deploys
+                        the containerized application.
+                    </p>
+                    <strong>GitHub Actions</strong>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">🐳</div>
+                    <h3>Containers</h3>
+                    <p>
+                        FastAPI application packaged as a Docker
+                        container and stored in Amazon ECR.
+                    </p>
+                    <strong>ECR + ECS Fargate</strong>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">❤️</div>
+                    <h3>Self-Healing</h3>
+                    <p>
+                        ECS failures are detected through EventBridge
+                        and recovered automatically using Lambda.
+                    </p>
+                    <strong>EventBridge + Lambda</strong>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">📊</div>
+                    <h3>Monitoring</h3>
+                    <p>
+                        CloudWatch monitors application and container
+                        health metrics.
+                    </p>
+                    <strong>CloudWatch</strong>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">🔔</div>
+                    <h3>Alerting</h3>
+                    <p>
+                        CloudWatch alarms send operational alerts
+                        through Amazon SNS.
+                    </p>
+                    <strong>SNS + Email</strong>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="icon">🔐</div>
+                    <h3>Security</h3>
+                    <p>
+                        GitHub OIDC and IAM policies avoid long-lived
+                        AWS credentials.
+                    </p>
+                    <strong>IAM + OIDC</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARCHITECTURE -->
+
+        <section class="section architecture-section" id="architecture">
+
+            <div class="section-title">
+
+                <span>ARCHITECTURE</span>
+
+                <h2>End-to-End DevOps Pipeline</h2>
+
+                <p>
+                    From source code to automated recovery.
+                </p>
+
+            </div>
+
+
+            <div class="pipeline">
+
+                <div class="pipeline-item">
+                    <div class="pipeline-icon">⌘</div>
+                    <strong>GitHub</strong>
+                    <small>Source Code</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="pipeline-item">
+                    <div class="pipeline-icon">⚙</div>
+                    <strong>GitHub Actions</strong>
+                    <small>CI/CD</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="pipeline-item">
+                    <div class="pipeline-icon">🐳</div>
+                    <strong>Docker</strong>
+                    <small>Container</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="pipeline-item">
+                    <div class="pipeline-icon">📦</div>
+                    <strong>Amazon ECR</strong>
+                    <small>Image Registry</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="pipeline-item">
+                    <div class="pipeline-icon">☁</div>
+                    <strong>ECS Fargate</strong>
+                    <small>Compute</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="pipeline-item">
+                    <div class="pipeline-icon">🌐</div>
+                    <strong>ALB</strong>
+                    <small>Load Balancer</small>
+                </div>
+
+            </div>
+
+
+            <div class="recovery-flow">
+
+                <div class="recovery-title">
+                    ⚡ Self-Healing Recovery
+                </div>
+
+                <div class="recovery-items">
+
+                    <span>ECS Failure</span>
+                    <b>→</b>
+
+                    <span>EventBridge</span>
+                    <b>→</b>
+
+                    <span>Lambda</span>
+                    <b>→</b>
+
+                    <span>New ECS Task</span>
+                    <b>→</b>
+
+                    <span>ALB Health Check</span>
+                    <b>→</b>
+
+                    <span class="healthy">Healthy ✓</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MONITORING -->
+
+        <section class="section" id="monitoring">
+
+            <div class="section-title">
+
+                <span>OBSERVABILITY</span>
+
+                <h2>Monitoring & Alerting</h2>
+
+            </div>
+
+
+            <div class="monitor-grid">
+
+                <div class="monitor-card">
+
+                    <div class="monitor-top">
+                        <span>CPU Utilization</span>
+                        <strong>OK</strong>
+                    </div>
+
+                    <div class="metric-value">
+                        <span id="cpu">32</span>%
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:32%"></div>
+                    </div>
+
+                    <small>CloudWatch ECS Metric</small>
+
+                </div>
+
+
+                <div class="monitor-card">
+
+                    <div class="monitor-top">
+                        <span>Running Tasks</span>
+                        <strong>HEALTHY</strong>
+                    </div>
+
+                    <div class="metric-value">
+                        1
+                    </div>
+
+                    <small>
+                        Desired: 1 • Pending: 0
+                    </small>
+
+                </div>
+
+
+                <div class="monitor-card">
+
+                    <div class="monitor-top">
+                        <span>ALB Target</span>
+                        <strong>HEALTHY</strong>
+                    </div>
+
+                    <div class="metric-value">
+                        🟢
+                    </div>
+
+                    <small>
+                        Target health check passed
+                    </small>
+
+                </div>
+
+
+                <div class="monitor-card">
+
+                    <div class="monitor-top">
+                        <span>SNS Alerting</span>
+                        <strong>ACTIVE</strong>
+                    </div>
+
+                    <div class="metric-value">
+                        🔔
+                    </div>
+
+                    <small>
+                        Email notification configured
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY -->
+
+        <section class="section" id="security">
+
+            <div class="section-title">
+
+                <span>SECURITY</span>
+
+                <h2>Security by Design</h2>
+
+            </div>
+
+
+            <div class="security-list">
+
+                <div>
+                    <span>✓</span>
+                    GitHub OIDC authentication
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    IAM least-privilege policies
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    ECS traffic restricted to ALB
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    No long-lived AWS credentials
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER CTA -->
+
+        <section class="cta">
+
+            <h2>
+                CloudSentinel
+            </h2>
+
+            <p>
+                Self-Healing DevSecOps Platform on AWS
+            </p>
+
+            <div>
+
+                <a
+                    href="https://github.com/soorya079/cloudsentinel"
+                    target="_blank"
+                    class="primary-btn"
+                >
+                    GitHub Repository
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            CloudSentinel • AWS DevSecOps Project • Soorya M
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
