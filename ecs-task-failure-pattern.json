@@ -5,6 +5,14 @@
     "clusterArn": [
       "arn:aws:ecs:ap-south-1:692869638892:cluster/cloudsentinel-cluster"
     ],
-    "lastStatus": ["STOPPED"]
+    "lastStatus": ["STOPPED"],
+    "stopCode": [
+      {
+        "anything-but": [
+          "ServiceSchedulerInitiated",
+          "UserInitiated"
+        ]
+      }
+    ]
   }
 }

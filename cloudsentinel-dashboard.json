@@ -1,0 +1,73 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "CloudSentinel CPU Utilization",
+        "metrics": [
+          [
+            "ECS/ContainerInsights",
+            "CpuUtilized",
+            "ClusterName",
+            "cloudsentinel-cluster",
+            "ServiceName",
+            "cloudsentinel-api-service"
+          ]
+        ],
+        "period": 60,
+        "stat": "Average",
+        "region": "ap-south-1"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "CloudSentinel Memory Utilization",
+        "metrics": [
+          [
+            "ECS/ContainerInsights",
+            "MemoryUtilized",
+            "ClusterName",
+            "cloudsentinel-cluster",
+            "ServiceName",
+            "cloudsentinel-api-service"
+          ]
+        ],
+        "period": 60,
+        "stat": "Average",
+        "region": "ap-south-1"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Running Tasks",
+        "metrics": [
+          [
+            "ECS/ContainerInsights",
+            "RunningTaskCount",
+            "ClusterName",
+            "cloudsentinel-cluster",
+            "ServiceName",
+            "cloudsentinel-api-service"
+          ]
+        ],
+        "period": 60,
+        "stat": "Average",
+        "region": "ap-south-1"
+      }
+    }
+  ]
+}
