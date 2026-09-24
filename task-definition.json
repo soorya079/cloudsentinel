@@ -1,0 +1,29 @@
+{
+  "family": "cloudsentinel-api",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::692869638892:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "cloudsentinel-api",
+      "image": "692869638892.dkr.ecr.ap-south-1.amazonaws.com/cloudsentinel-api:1.0",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/cloudsentinel-api",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
